@@ -19,8 +19,7 @@ library(tidyverse)
 # Read data
 monthly_foreign_fishing <- read.csv(here("raw_data", "monthly_foreign_fishing.csv"),
                                     stringsAsFactors = F) %>%
-  mutate(date = date(date)) %>% 
-  drop_na(eez_iso3)
+  mutate(date = date(date))
 
 # Generate facet_trelliscope plot
 ggplot(data = monthly_foreign_fishing,
@@ -31,6 +30,6 @@ ggplot(data = monthly_foreign_fishing,
   facet_trelliscope(~eez_iso3,
                     scales = "free_y",
                     ncol = 4,
-                    nrow = 4)
+                    nrow = 2)
 
 # END OF SCRIPT

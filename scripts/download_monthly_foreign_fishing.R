@@ -28,8 +28,9 @@ monthly_foreign_fishing <- get_table(project = "ucsb-gfw",
          total_hours)
 
 # Export the data
-saveRDS(object = monthly_foreign_fishing,
-        file = here("raw_data", "monthly_foreign_fishing.rds")) 
+write.csv(x = monthly_foreign_fishing,
+          file = here("raw_data", "monthly_foreign_fishing.csv"),
+          row.names = F) 
 
 
 # END OF SCRIPT

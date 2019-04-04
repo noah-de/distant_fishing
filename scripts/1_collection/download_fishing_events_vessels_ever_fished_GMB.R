@@ -20,8 +20,8 @@ fishing_events_vessels_ever_fished_GMB <-
             table = "fishing_events_vessels_ever_fished_GMB")
 
 # Export the data
-saveRDS(object = fishing_events_vessels_ever_fished_GMB,
-        file = here("raw_data", "fishing_events_vessels_ever_fished_GMB.rds")) 
-
+write.csv(x = fishing_events_vessels_ever_fished_GMB,
+          file = here("raw_data", "fishing_events_vessels_ever_fished_GMB.csv"),
+          row.names = F) 
 
 # END OF SCRIPT

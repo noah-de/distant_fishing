@@ -6,3 +6,4 @@ packrat/lib*/
 .httr-oauth
 .Rprofile
 raw_data/fishing_events_vessels_ever_fished_GMB.rds
+raw_data/fishing_events_vessels_ever_fished_GMB.csv
